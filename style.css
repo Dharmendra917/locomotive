@@ -1,0 +1,637 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(198, 192, 192);
+    font-family: 'gilroy';
+    scroll-behavior: smooth;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(155, 185, 196);
+}
+.container{
+    width: 94%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+#page1{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom right,#D4C9C9,#D4CAC9);
+    position: relative;
+    overflow: hidden;
+}
+#page1 nav{
+    padding: 15px 0px;
+    display: flex;
+    justify-content:space-between;
+}
+#page1 nav h2{
+   color: #222222;  
+}
+#page1  h1{
+    font-size: 13vw;
+    font-weight: 550;
+    line-height: .9;
+    color:#222222;
+    transform: rotateX(-90deg) ;   
+    opacity: 0;
+}
+#page1  h1 span{
+    color:rgb(253, 251, 251);
+}
+#page1 .header{
+    position: absolute;
+    top:62%;
+    left: 0%;
+    transform: translate(0%,-50%);
+}
+#page1 .header_t{
+    z-index: 999;
+    display: grid;
+}
+#page1 .header_b{
+    display: flex;
+    color: white;
+    z-index: 99999;
+}
+#page1 .header_b h1{
+    color: white;
+}
+#page1 .container>span img{
+    position: absolute;
+    bottom: -25%;
+    right: 0%;
+    width: 80px;
+}
+#page1 .container .border{
+    height: 2px;
+    width: 100%;
+    scale: 0;
+    background-color: #22222280;
+    position: absolute;
+    bottom: 0%;
+}
+/*======================= page2  ==========================================*/
+#page2 {
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(to bottom right,#D4CCC9,#D4CDC9);
+    position: relative;
+}
+#page2 .container{
+    padding: 3% 0px;
+    display: flex; 
+}
+#page2 .container .left{
+    width: 45%;
+}
+#page2 .container .left p{
+    padding: 2px 0px;
+    width: 50%;
+    font-family: 'gilroy';
+    font-weight: 650;
+    font-size: 1.1vw;
+    line-height: 1.5;
+    text-align: start;
+    color: #222222;
+}
+#page2 .container .right{
+    width: 55%;
+    height: 100%;
+    position: relative;
+}
+#page2 .container .right ul{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    list-style: none;
+    display: block;
+}
+#page2 .container .right ul p{
+    width: 0%;
+    height: 1px;
+    background-color: #222222;
+}
+#page2 .container .right ul li{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 0px;
+    margin-top: 1% ;
+}
+.right ul li a{
+    text-decoration: none;
+    color: #222222;
+    font-size: 1.5vw;
+    font-weight: 600;
+    width: 100%;
+}
+.right ul li:hover{
+    color: white;
+}
+.right ul li a:hover{
+    color: white;
+}
+/*---------------------page3--------------------------------------*/
+#page3 {
+    width: 100%;
+    height: 140vh;
+    background: linear-gradient(to bottom right,#D4CEC9,#D4D3C9);
+    position: relative;
+    padding: 1% 0px;
+    /* overflow: hidden; */
+}
+#page3 .container{
+    height: 100%;
+    padding: 3% 0px;
+    display: flex; 
+    position: absolute;
+} 
+ #page3 .container .left{
+    width: 40%;
+    height: 100vh;
+    position: relative;
+}
+#page3 .left .text{
+    width: 70%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+#page3 .left .text h2{
+    font-weight: 550;
+    color: #222222;
+}
+#page3 .container .left .text p{
+    padding: 10px 0px;
+    font-family: 'gilroy';
+    font-weight: 500;
+    font-size: 1vw;
+    line-height: 1.1;
+    text-align: start;
+    color: #222222;
+}
+#page3 .right{
+    width: 60%;
+    height: 130vh;
+    position: relative;
+}
+#page3 .right img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.cir{
+    top: 50%;
+    right: 2%;
+    transform: translate(0%,-50%);
+    position: absolute;
+    background-color: #222222;
+    width: 100px;
+    height: 80px;
+    border-radius: 50%;
+    scale: 0;
+}
+#page3 .right span{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 500;
+}
+#page3 .right h2{
+    position: absolute;
+    color:#eceae3;
+    bottom: 5%;
+    left: 50%;
+}
+/*----------------- page4 ------------------------*/
+#page4{
+    width: 100%;
+    height: 150vh;
+    padding: 5% 3%;
+    background: linear-gradient(to right bottom,#D4D3C9,#D2D4C9)
+}
+#page4 .container1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.container1 .left{
+    width: 50%;
+    height: 80%;
+    position: relative;
+}
+.container1 .left img{
+    height: 100%;
+    width: 70%;
+}
+.container1 .right{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.container1 .right img{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+}
+.container1 .cir2,.cir1{
+    top: 50%;
+    right: 18%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-color: #222222;
+    width: 100px;
+    height: 80px;
+    border-radius: 50%;
+    scale: 1;
+}
+.container1 .cir2{
+    top: 110%;  /* 110% */
+    left: 0%;
+    transform: translate(0%,-50%);
+    position: absolute;
+    background-color: #222222;
+    width: 100px;
+    height: 80px;
+    border-radius: 50%;
+    scale: 0;
+}
+
+.container1  h2{
+    position: absolute;
+    color:#eceae3;
+    bottom: 5%;
+    left: 30%;
+}
+.container1 span{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 500;
+}
+#page4 .container1 .right .cir1.a{
+    top: 120%; /*120*/
+    left: 40%;
+    transform: translate(-50%,-50%);
+    background-color: black;
+    z-index: 9999;
+}
+#page4 .container1 .right .cir1.b{
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 9999;
+    background-color: black;
+}
+#page4 .container1 .right .cir1.c{
+    top: 75%;
+    left: 96%;
+    transform: translate(-50%, 0%);
+    position: absolute;
+    background-color: black;
+    z-index: 9999;
+}
+.container1 .right h2{
+    position: absolute;
+    left: 70%;
+    bottom: 0%;
+    transform: translate(-50%,-50%);
+}
+/*----------------- page5 -------------*/
+#page5{
+    position: relative;
+    padding: 10px 3%;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom right,#D0D4C9,#CDD4C9);
+    overflow:hidden;
+}
+#page5 .container2{
+      width: 100%;
+      height: 100%;
+}
+#page5 .left{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+#page5 .left .text{
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    color:#222222
+}
+#page5 .left h3{
+    font-size: 1vw;
+}
+#page5 .left p{
+    margin-top: 15px;
+    font-weight: 500;
+}
+/*----------layer-----------------*/
+#page5 .layer{
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+#page5 .layer .main_block{
+    width: 100%;
+    height: 100%;
+} 
+ .block span{
+    padding: 1px 2%;
+    margin: 5px;
+    background-color: white;
+     font-size: 9vw;
+    font-weight: 800;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-family: 'gilroy';
+    position: absolute;
+    left: 0%;
+} 
+ #page5 .layer .-one span{
+    position: absolute;
+    top: 55%;
+    background-color: rgb(251, 252, 251);
+    transform: rotatez(25deg);
+    z-index: 999;
+} 
+#page5 .layer .-two span{
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    background-color: rgb(251, 252, 251);
+    transform: rotate(5deg);
+    z-index: 9996;
+} 
+#page5 .layer .-three span{
+    position: absolute;
+    top: 55%;
+    left: 0%;
+    background-color: rgb(251, 252, 251);
+    z-index: 9997;
+    transform: rotate(9deg);
+} 
+#page5 .layer .-four span{
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    background-color: rgb(251, 252, 251);
+    transform: rotate(-15deg);
+    z-index: 9998;
+} 
+#page5 .layer .-five span{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    background-color: rgb(251, 252, 251);
+    transform: rotate(0deg);
+    z-index: 9999;
+} 
+/* ------------ page6 ------------*/
+#page6{
+    padding: 10px 3%;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(to bottom,#CDD4C9,#C9D1D4);
+    overflow: hidden;
+}
+#page6 .container2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+#page6 .left{
+    width: 40%;
+    height: 100%;
+    position: relative;
+}
+#page6 .left .text{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,-50%);
+    width: 80%;
+    padding: 5px 0px;
+    color: #222222;
+
+}
+#page6 .left .text h3{
+    font-style: 1vw;
+}
+#page6 .left .text p{
+    font-weight: 500;
+}
+#page6 .right{
+    width: 60%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 999;
+}
+#page6 .right .inner_c{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,0%);
+    width: 65%;
+    display: grid;
+    gap: 50%;
+}
+.right .inner_c .box{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
+}
+.right .inner_c .box h1{
+    font-size: 3.5vw;
+    font-weight: 700;
+    width: 100%;
+    position: relative;   
+}
+.right .inner_c .box .cir_{
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #222222;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    scale: 1;
+}
+.box .cir_ span{
+    color: white;
+    font-weight: 500;
+}
+.box.-three h1 span{
+    opacity: .1;
+}
+/* ------- page7  -------- */ 
+#page7{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom right,#C9D1D4,#C9D1D4);
+    padding: 0px 3%;
+}
+#page7 .container2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+#page7 .container2 .left{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+#page7 .left .text{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,-50%);
+    color: #222222;
+}
+#page7 .left .text p{
+    font-weight: 500;
+}
+#page7 .container2 .right{
+    width: 50%;
+    height: 100%;
+    background-image: url("https://locomotivemtl.github.io/locomotive-scroll/dist/images/locomotive04.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+#page7 .right .layer{
+    width: 101%;
+    height: 100%;
+    background-color: #C9D1D4;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+#page7 .right .layer2{
+    width: 101%;
+    height: 50%;
+    background-color: #C9D1D4;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%,0%);
+}
+/*------- page8 ------------*/
+#page8{
+    padding: 8px 3%;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(to bottom,#C9D2D4,#C9CCD4)
+}
+#page8 .container3{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.container3 .text{
+    position: absolute;
+    bottom: 2%;
+    left: 0%;
+    height: 60%;
+    display: flex;
+    align-items: end;
+    color: #222222;
+}
+.container3 .text h1{
+    line-height: .83;
+    font-size: 200px;
+    font-weight: 550;
+}
+.container3 .text h1 span{
+    color: white;
+}
+#page8 p{
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    background-color: #222222;
+}
+#page8 .header_b h1{
+    transform: rotateX(-90deg);
+    opacity: .5;
+    color: #444343;
+}
+#page8 .header_b span{
+    color: rgb(231, 232, 231);
+}
+/*--------------- page9 ------------------*/
+#page9{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(to bottom,#C9D2D4,#D4C9C9);
+    position: relative;
+    overflow: hidden;
+}
+#page9 .layer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 90%;
+}
+#page9 span{
+    font-size: 7vw;
+    position: absolute;
+}
+.t_one{
+    left: 90%;
+    top: 15%;
+}
+.t_two{
+    top: 90%;
+    left: 0%;
+}
+/*--------------- page10  -------------*/
+#page10{
+    width: 100%;
+    height: 100%;
+    padding: 5px 3%;
+    background:linear-gradient(to bottom,#D4C9C9,#D4C9C9);
+}
+#page10  .container3{
+    width: 100%;
+   height: 100%;
+   position: relative;
+}
+#page10  .container3 .text{
+    height: 100%;
+    top: 0%;
+}
+#page10  .container3 .text h1{
+    transform: rotateX(-90deg);
+    opacity: .5;
+    color: #444343;
+}
+#page10  .container3 .text h1 span{
+    color: rgb(218, 219, 218);
+}
